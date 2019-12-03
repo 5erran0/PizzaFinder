@@ -6,12 +6,11 @@ apply plugin: 'kotlin-android-extensions'
 
 dependencies {
     implementation project(":remote")
+    implementation project(":design")
 
     implementation Libs.retrofit.core
 
     implementation Libs.moshi.core
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     kapt Libs.moshi.codegen
 
     implementation Libs.rxjava2.core
@@ -25,6 +24,7 @@ dependencies {
 
     implementation Libs.androidx.appCompat
     implementation Libs.google.material
+    implementation Libs.constrainLayout
 
     testImplementation Libs.junit
     testImplementation Libs.mockito.core
