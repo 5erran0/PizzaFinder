@@ -1,5 +1,6 @@
 package com.ginzo.pizza_map.data.entities
 
+import com.ginzo.pizza_map.domain.entities.Place
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
@@ -16,5 +17,9 @@ data class PlaceEntity(
     val longitude: Double,
     val latitude: Double,
     val images: List<ImageEntity>,
-    val friendsIds: List<String>
-)
+    val friendIds: List<String>
+) {
+    fun toDomain(): Place {
+        return Place(id, name, phone, website, address, city, openingHours, longitude, latitude, images.map { it.toDomain() }, friendIds)
+    }
+}

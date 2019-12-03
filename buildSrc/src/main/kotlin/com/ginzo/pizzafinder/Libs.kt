@@ -91,10 +91,10 @@ object Libs {
     }
 
     object mockito {
-
         const val version = "2.23.0"
 
         const val core = "org.mockito:mockito-core:$version"
+        const val inline = "org.mockito:mockito-inline:$version"
         const val kotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
         const val android = "org.mockito:mockito-android:$version"
     }
