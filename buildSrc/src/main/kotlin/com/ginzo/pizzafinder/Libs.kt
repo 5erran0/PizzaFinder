@@ -48,7 +48,7 @@ object Libs {
     }
 
     object retrofit {
-        private const val retrofitVersion = "2.6.1"
+        private const val retrofitVersion = "2.6.2"
 
         val core = "com.squareup.retrofit2:retrofit:$retrofitVersion"
         val rxAdapter = "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
@@ -56,7 +56,7 @@ object Libs {
     }
 
     object moshi {
-        private const val version = "1.8.0"
+        private const val version = "1.9.2"
 
         const val core = "com.squareup.moshi:moshi:$version"
         const val codegen = "com.squareup.moshi:moshi-kotlin-codegen:$version"
